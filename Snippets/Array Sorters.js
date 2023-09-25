@@ -16,10 +16,10 @@ function sortCompareAlphabetically(_a, _b, descending) {
 }
 
 // Example - Sort alphabetically, ascending A -> Z
-myArray.sort((a, b) => sortCompareAlphabetically(a, b, false));
+['b', 'ó', 'a', 'c'].sort((a, b) => sortCompareAlphabetically(a, b, false)); // ['a', 'b', 'c', 'ó']
 
 // Example - Sort alphabetically, ascending Z -> A
-myArray.sort((a, b) => sortCompareAlphabetically(a, b, true));
+['b', 'ó', 'a', 'c'].sort((a, b) => sortCompareAlphabetically(a, b, true)); // ['ó', 'c', 'b', 'a']
 
 // =================
 // Sort numerically
@@ -31,7 +31,7 @@ function sortCompareNumerically(_a, _b, descending) {
 }
 
 // Example - Sort numerically, ascending 0 -> 9
-myArray.sort((a, b) => sortCompareNumerically(a, b, false));
+[5, 1, 2000, -60].sort((a, b) => sortCompareNumerically(a, b, false)); // [-60, 1, 5, 2000]
 
 // Example - Sort numerically, ascending 9 -> 0
-myArray.sort((a, b) => sortCompareNumerically(a, b, true));
+[5, 1, 2000, -60].sort((a, b) => sortCompareNumerically(a, b, true)); // [2000, 5, 1, -60]
